@@ -1,66 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<p>
+    <h1 style="text-align:center;">My Blog</h1>
 </p>
 
-## About Laravel
+<p style="text-align:center;">
+    <a href="https://www.linkedin.com/in/0berke0ozdemir0/">Linkedin</a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Proje Hakkında
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+"My Blog" projesi, Laravel kullanılarak geliştirilen bir blog uygulamasıdır. Bu proje, blog yazarlarının makalelerini yayınlamalarına ve okuyucuların bu makaleleri okumasına olanak tanır.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Ziyaretçiler, blog yazarlarının yazılarını görüntüleyebilir.
+- Admin Panel'den makaleleri/sayfaları/kategorileri kolayca görüntüleyebilir, düzenleyebilir, silebilir, detaylarını inceleyebilir ve görüntülkeme durmunu değiştireblirsiniz.
 
-## Learning Laravel
+## Teknolojiler ve Kullanılanlar
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+"My Blog" projesi aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **[Laravel 10](https://laravel.com/) : Web uygulamasının temel altyapısı için kullanılmıştır.**
+- **[PHP 8.1](https://www.php.net/) : Laravel ile uyumlu PHP sürümüdür.**
+- **Blade : Laravel'in şablon motoru olarak kullanılmıştır.**
+- **[Bootstrap](https://getbootstrap.com/) : Kullanıcı arayüzü ve tasarım için kullanılmıştır.**
+- **[Git](https://git-scm.com/) : Sürüm kontrolü ve proje yönetimi için kullanılmıştır.**
+- **[VSCode](https://code.visualstudio.com/) : Kod editörü olarak kullanılmıştır.**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Kurulum
 
-## Laravel Sponsors
+Proje kodunu yerel bilgisayarınıza klonlayarak "My Blog" uygulamasını çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Projeyi GitHub sayfanızdan veya komut satırından klonlayın: **git clone https://github.com/002Be/Laravel-MyBlogProject.git**
+- Gerekli bağımlılıkları yüklemek için: **composer install**
+- .env dosyasını oluşturun ve gerekli ayarları yapılandırın: **cp .env.example .env**
+- Veritabanını oluşturun ve migre edin: **php artisan migrate**
+- Uygulamayı çalıştırın: **php artisan serve**
+- Artık "My Blog" projesi yerel bilgisayarınızda çalışıyor!
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Proje [MIT lisansı](https://opensource.org/licenses/MIT) altında lisanslanmıştır.
+
+## İletişim
+
+Herhangi bir soru, öneri veya geri bildirim için lütfen <a href="https://www.linkedin.com/in/0berke0ozdemir0/">Linkedin hesabımdan</a> benimle iletişime geçin.
