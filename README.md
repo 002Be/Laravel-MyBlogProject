@@ -6,7 +6,7 @@
 
 ## Proje Hakkında
 
-"My Blog" projesi, Laravel kullanılarak geliştirilen bir blog uygulamasıdır. Bu proje, blog yazarlarının makalelerini yayınlamalarına ve okuyucuların bu makaleleri okumasına olanak tanır.
+"My Blog" projesi, Laravel kullanılarak geliştirilen bir blog sitesidir. Bu proje, blog yazarlarının makalelerini yayınlamalarına ve okuyucuların bu makaleleri okumasına olanak tanır.
 
 - Ziyaretçiler, blog yazarlarının yazılarını görüntüleyebilir.
 - Admin Panel'den makaleleri/sayfaları/kategorileri kolayca görüntüleyebilir, düzenleyebilir, silebilir, detaylarını inceleyebilir ve görüntülkeme durmunu değiştireblirsiniz.
