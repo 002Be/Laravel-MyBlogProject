@@ -1,6 +1,4 @@
-<p>
-    <h1 style="text-align:center;">My Blog</h1>
-</p>
+<h1 style="text-align:center;">My Blog</h1>
 
 <p style="text-align:center;">
     <a href="https://www.linkedin.com/in/0berke0ozdemir0/">Linkedin</a>
