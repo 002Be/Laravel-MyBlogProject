@@ -13,15 +13,15 @@
 
 
 ### Ana Sayfa
-![Ana Sayfa](GitHub_items/mainPage.png)
+![Ana Sayfa](https://github.com/002Be/Laravel-MyBlogProject/blob/main/GitHub_items/mainPage.png)
 ### Blog Sayfası
-![Blog Sayfası](GitHub_items/singlePage.png)
+![Blog Sayfası](https://github.com/002Be/Laravel-MyBlogProject/blob/main/GitHub_items/singlePage.png)
 ### Admin | Kategoriler
-![Admin Kategoriler](GitHub_items/categoryPage.png)
+![Admin Kategoriler](https://github.com/002Be/Laravel-MyBlogProject/blob/main/GitHub_items/categoryPage.png)
 ### Admin | Makaleler
-![Admin Makaleler](GitHub_items/articlePage.png)
+![Admin Makaleler](https://github.com/002Be/Laravel-MyBlogProject/blob/main/GitHub_items/articlePage.png)
 ### Admin | Sayfalar
-![Admin Sayfalar](GitHub_items/adminPages.png)
+![Admin Sayfalar](https://github.com/002Be/Laravel-MyBlogProject/blob/main/GitHub_items/adminPages.png)
 
 ## Teknolojiler ve Kullanılanlar
 
