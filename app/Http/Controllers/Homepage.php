@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 use Mail;
 use Illuminate\Mail\Mailable;
 
-use App\Models\Categorie; //? Models çağrılır
-use App\Models\Article; //? Models çağrılır
-use App\Models\Page; //? Models çağrılır
-use App\Models\Contact; //? Models çağrılır
-use App\Models\Config; //? Models çağrılır
+use App\Models\Categorie;
+use App\Models\Article;
+use App\Models\Page;
+use App\Models\Contact;
+use App\Models\Config;
 
 class Homepage extends Controller
 {
@@ -25,17 +25,13 @@ class Homepage extends Controller
     }
 
     public function index(){
-        // $data["articles"] = Article::orderBy("created_at","DESC")->get(); //? get yerine paginate yazarsak bu listelemeyi sayfalandırabiliriz
         $data["articles"] = Article::with("getCategorie")->where("status",1)->whereHas("getCategorie",function($query){
             $query->where("status",1);
-        })->orderBy("created_at","DESC")->paginate(8); //? Modelden gelen veriler dizinin içine kaydedilir
-        return view("front.homepage", $data); //? Dizi gösterilecek sayfaya yönlendirilir
+        })->orderBy("created_at","DESC")->paginate(8);
+        return view("front.homepage", $data);
     }
 
     public function single($categorie, $slug){
-        // $article=Article::whereSlug($slug)->first() ?? abort(404, "Böyle bir blog bulunamadı.");
-        // dd($article);
-
         $categorie = Categorie::where("slug", $categorie)->first() ?? abort(404, "Böyle bir kategori bulunamadı.");
 
         $article = Article::where("slug", $slug)->where("categorie_id",$categorie->id)->first() ?? abort(404, "Böyle bir yazı bulunamadı.");
@@ -47,7 +43,6 @@ class Homepage extends Controller
     public function categorie($slug){
         $categorie = Categorie::where("slug", $slug)->first() ?? abort(404, "Böyle bir kategori bulunamadı.");
         $data["categorie"] = $categorie;
-        // $data["articles"] = Article::where("categorie_id", $categorie->id)->orderBy("created_at","DESC")->get();
         $data["articles"] = Article::where("categorie_id", $categorie->id)->where("status",1)->orderBy("created_at","DESC")->paginate(3);
         return view("front.categorie", $data);
     }

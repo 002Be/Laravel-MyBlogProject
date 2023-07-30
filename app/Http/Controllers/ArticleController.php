@@ -10,22 +10,19 @@ use App\Models\Categorie;
 
 class ArticleController extends Controller
 {
-    // Display a listing of the resource.
-    public function index() //* Görüntülemek için kullanılır
+    public function index()
     {
         $articles = Article::orderBy("created_at","DESC")->get();
         return view("back.articles.index", compact("articles"));
     }
 
-    // Show the form for creating a new resource.
-    public function create() //* Oluşturma sırasında formdaki öğeler (Section içindeki otionsları sıralamak vb.) için kullanılır
+    public function create()
     {
         $categories = Categorie::orderBy("created_at","ASC")->get();
         return view("back.articles.create", compact("categories"));
     }
 
-    // Store a newly created resource in storage.
-    public function store(Request $request) //* Oluşturmak için kullanılır
+    public function store(Request $request)
     {
         $request->validate([
             "title" => "min:3",
@@ -47,22 +44,19 @@ class ArticleController extends Controller
         return redirect()->route('admin.makaleler.index');
     }
 
-    // Display the specified resource.
     public function show(string $id)
     {
         //
     }
 
-    // Show the form for editing the specified resource.
-    public function edit(string $id) //* Düzenleme sırasında formdaki öğeler (Section içindeki otionsları sıralamak vb.) için kullanılır
+    public function edit(string $id)
     {
         $article = Article::findOrFail($id);
         $categories = Categorie::orderBy("created_at","ASC")->get();
         return view("back.articles.update", compact("categories", "article"));
     }
 
-    // Update the specified resource in storage.
-    public function update(Request $request, string $id) //* Düzenlemek için kullanılır
+    public function update(Request $request, string $id)
     {
         $request->validate([
             "title" => "min:3",
@@ -90,8 +84,7 @@ class ArticleController extends Controller
         $article->save();
     }
 
-    // Remove the specified resource from storage.
-    public function destroy(string $id) //* Silmek için kullanılır
+    public function destroy(string $id)
     {
         
     }

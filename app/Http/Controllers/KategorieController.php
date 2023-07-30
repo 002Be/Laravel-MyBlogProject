@@ -26,7 +26,7 @@ class KategorieController extends Controller
         ]);
         $isExist = Categorie::whereSlug(Str::slug($request->name,"-"))->first();
         if($isExist){
-            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify bu kütüphane kullanılacak
+            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify kütüphanesi kullanılacak
             toastr()->error($request->name.' adında bir kategori zaten mevcut!', 'Başarısız');
             return redirect()->back();
         }
@@ -34,7 +34,7 @@ class KategorieController extends Controller
         $categorie->name = $request->name;
         $categorie->slug = Str::slug($request->name,"-");
         $categorie->save();
-        //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify bu kütüphane kullanılacak
+        //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify kütüphanesi kullanılacak
         toastr()->success('Kategori oluşturuldu', 'Başarılı');
         return redirect()->back();
     }
@@ -51,7 +51,7 @@ class KategorieController extends Controller
         $isSlug = Categorie::whereSlug(Str::slug($request->slug,"-"))->whereNotIn("id", [$request->id])->first();
         $isName = Categorie::whereName($request->name)->whereNotIn("id", [$request->id])->first();
         if($isSlug or $isName){
-            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify bu kütüphane kullanılacak
+            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify kütüphanesi kullanılacak
             // toastr()->error($request->name.' adında bir kategori zaten mevcut!', 'Başarısız');
             return redirect()->back();
         }
@@ -59,7 +59,7 @@ class KategorieController extends Controller
         $categorie->name = $request->name;
         $categorie->slug = Str::slug($request->slug,"-");
         $categorie->save();
-        //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify bu kütüphane kullanılacak
+        //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify kütüphanesi kullanılacak
         // toastr()->success('Kategori güncellendi', 'Başarılı');
         return redirect()->back();
     }
@@ -67,7 +67,7 @@ class KategorieController extends Controller
     public function delete(Request $request){
         $categorie = Categorie::findOrFail($request->id);
         if($categorie->id==1){
-            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify bu kütüphane kullanılacak
+            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify kütüphanesi kullanılacak
             // toastr()->error('Bu kategori silinemez!', 'Başarısız');
             return redirect()->back();
         }
@@ -77,7 +77,7 @@ class KategorieController extends Controller
             Article::where("categorie_id", $categorie->id)->update([
                 "categorie_id"=>1
             ]);
-            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify bu kütüphane kullanılacak
+            //! Sayfadaki JS kodlarını bozuyor | Bunun yerine https://github.com/mckenziearts/laravel-notify kütüphanesi kullanılacak
             toastr()->success('Kategori silindi | Bu kategoriye ait '.$count.' makale '.$defaultCategorie.' kategorisine aktarıldı!', 'Başarılı');
         }else{
             toastr()->error('Kategori silindi', 'Başarılı');

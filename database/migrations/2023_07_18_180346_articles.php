@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string("title");
             $table->longText("content");
-            $table->unsignedBigInteger("categorie_id"); //? unsigned : minimum 0 değerini alsın
+            $table->unsignedBigInteger("categorie_id");
             $table->integer("hit")->default(0);
             $table->string("image");
             $table->string("slug");
@@ -20,8 +20,6 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreign("categorie_id")->references("id")->on("categories")->onDelete("cascade");
-            //? Bağlanacak sütün -> Referans alınacak sütun -> Tablo -> Eğer categori tablosundaki bir kategori silinirse ona bağlı olan satırları bu tablodan siler
-            //? Bu sayede Categories tablosundaki id sütunuyla, Articles tablosundaki categorie_id sütunuyla ilişki kurmuş oluyor
         });
     }
 

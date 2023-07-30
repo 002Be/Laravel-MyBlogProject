@@ -13,7 +13,6 @@ class AuthController extends Controller
     }
 
     public function loginPost(Request $request){
-        // dd($request->post());
         if(
             Auth::attempt([
                 "mail" => $request->mail,
