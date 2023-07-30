@@ -11,6 +11,18 @@
 - Ziyaretçiler, blog yazarlarının yazılarını görüntüleyebilir.
 - Admin Panel'den makaleleri/sayfaları/kategorileri kolayca görüntüleyebilir, düzenleyebilir, silebilir, detaylarını inceleyebilir ve görüntülkeme durmunu değiştireblirsiniz.
 
+
+### Ana Sayfa
+![Ana Sayfa](GitHub_items/mainPage.png)
+### Blog Sayfası
+![Blog Sayfası](GitHub_items/singlePage.png)
+### Admin | Kategoriler
+![Admin Kategoriler](GitHub_items/categoryPage.png)
+### Admin | Makaleler
+![Admin Makaleler](GitHub_items/articlePage.png)
+### Admin | Sayfalar
+![Admin Sayfalar](GitHub_items/adminPages.png)
+
 ## Teknolojiler ve Kullanılanlar
 
 "My Blog" projesi aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
@@ -33,10 +45,10 @@ Proje kodunu yerel bilgisayarınıza klonlayarak "My Blog" uygulamasını çalı
 - Uygulamayı çalıştırın: **php artisan serve**
 - Artık "My Blog" projesi yerel bilgisayarınızda çalışıyor!
 
-## License
-
-Proje [MIT lisansı](https://opensource.org/licenses/MIT) altında lisanslanmıştır.
-
 ## İletişim
 
 Herhangi bir soru, öneri veya geri bildirim için lütfen <a href="https://www.linkedin.com/in/0berke0ozdemir0/">Linkedin hesabımdan</a> benimle iletişime geçin.
+
+## License
+
+Proje [MIT lisansı](https://opensource.org/licenses/MIT) altında lisanslanmıştır.
