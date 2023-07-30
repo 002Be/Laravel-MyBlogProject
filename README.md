@@ -50,4 +50,4 @@ Proje kodunu yerel bilgisayarınıza klonlayarak "My Blog" uygulamasını çalı
 Herhangi bir soru, öneri veya geri bildirim için lütfen <a href="https://www.linkedin.com/in/0berke0ozdemir0/">Linkedin hesabımdan</a> benimle iletişime geçin.
 
 ## License
-Proje [MIT License](./License) altında yayınlanmaktadır.
+Proje [MIT License](./LICENSE) altında yayınlanmaktadır.
